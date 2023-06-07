@@ -1,2 +1,6 @@
-#!/bin/bash
-this is the listit file which is supposed to display the content of your current directory
+0-current_working_directory
+0-current_working_directory~
+1-listit
+1-listit~
+README.md
+README.md~
