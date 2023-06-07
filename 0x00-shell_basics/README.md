@@ -1,0 +1,1 @@
+This directory should contain a file to run script that prints the current working directory.
