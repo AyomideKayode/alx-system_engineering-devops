@@ -1,0 +1,1 @@
+This repository contains my tasks for the Shell basic in ALX.
