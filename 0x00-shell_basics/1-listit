@@ -1,2 +1,2 @@
 #!/bin/bash
-ls - display content list of your current directory
+ls - list files
