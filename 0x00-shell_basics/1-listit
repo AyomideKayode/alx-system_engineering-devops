@@ -1,2 +1,2 @@
 #!/bin/bash
-Listit file that contain list of current directory
+ls - display content list of your current directory
