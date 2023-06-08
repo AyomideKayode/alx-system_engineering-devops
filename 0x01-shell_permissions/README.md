@@ -28,7 +28,7 @@ Task 12: mkdir -m 751 my_dir = script that creates a dir called ```my_dir``` wit
 
 Task 13: chgrp school hello = script that changes the group owner to ```school``` for the file ```hello```
 
-Task 14:
+Task 14: chown vincent:staff . = script that changes the owner to ```vincent``` and group owner to ```staff``` for all files and dir in the working dir
 
 Task 15:
 
