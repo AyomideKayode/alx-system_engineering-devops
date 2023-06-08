@@ -30,7 +30,7 @@ Task 13: chgrp school hello = script that changes the group owner to ```school``
 
 Task 14: chown vincent:staff * = script that changes the owner to ```vincent``` and group owner to ```staff``` for all files and dir in the working dir
 
-Task 15:
+Task 15: chown -h vincent:staff _hello = script that changes the owner and the group owner of ```hello``` to ```vincent``` and ```staff``` respectively
 
 Task 16:
 
