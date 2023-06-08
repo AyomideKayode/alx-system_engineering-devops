@@ -32,7 +32,7 @@ Task 14: chown vincent:staff * = script that changes the owner to ```vincent``` 
 
 Task 15: chown -h vincent:staff _hello = script that changes the owner and the group owner of ```hello``` to ```vincent``` and ```staff``` respectively
 
-Task 16:
+Task 16: chown --from=guillaume betty hello = script that changes the owner of the file ```hello``` to user ```betty``` only if it is owned by user ```guillaume```
 
 Task 17:
 
