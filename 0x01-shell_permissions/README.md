@@ -16,4 +16,6 @@ Task 6: chmod ug+x,o+r hello = script that adds execute permission to owner and 
 
 Task 7: chmod ugo+x hello = script that adds execution permission to the owner, group owner and othe users
 
+Task 8: chmod 007 hello = script that sets permission to the file ```hello``` as follows; Owner- no permission at all, Group- no permission at all, Other users- all permissions
+
 
