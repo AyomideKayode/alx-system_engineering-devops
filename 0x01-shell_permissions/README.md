@@ -22,7 +22,7 @@ Task 9: chmod 753 hello = script that sets mode of the file ```hello``` to this:
 
 Task 10: chmod --reference=ollh hello = script that sets the mode of the file ```hello``` to the same as file ```olleh```
 
-Task 11: chmod -R +X = script that add execute permissions to all subdirectories of the current directory for the owner, group owner and all other users
+Task 11: chmod -R +X . = script that add execute permissions to all subdirectories of the current directory for the owner, group owner and all other users
 
 Task 12:
 
