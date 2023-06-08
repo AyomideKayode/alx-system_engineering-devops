@@ -18,4 +18,6 @@ Task 7: chmod ugo+x hello = script that adds execution permission to the owner, 
 
 Task 8: chmod 007 hello = script that sets permission to the file ```hello``` as follows; Owner- no permission at all, Group- no permission at all, Other users- all permissions
 
+Task 9: chmod 753 hello = script that sets mode of the file ```hello``` to this: -rwxr-x-wx
+
 
