@@ -8,3 +8,6 @@ Task 2: groups = script that prints all the groups the current user is part of
 
 Task 3: sudo chown betty hello = script that changes the owner of the file ```hello``` to user betty
 
+Task 4: touch hello = script that creates an empty file called ```hello```
+
+
