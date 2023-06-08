@@ -24,7 +24,7 @@ Task 10: chmod --reference=ollh hello = script that sets the mode of the file ``
 
 Task 11: chmod -R +X . = script that add execute permissions to all subdirectories of the current directory for the owner, group owner and all other users
 
-Task 12:
+Task 12: mkdir -m 751 my_dir = script that creates a dir called ```my_dir``` with permissions 751 in the working dir
 
 Tak 13:
 
