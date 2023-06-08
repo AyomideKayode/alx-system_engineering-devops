@@ -20,4 +20,20 @@ Task 8: chmod 007 hello = script that sets permission to the file ```hello``` as
 
 Task 9: chmod 753 hello = script that sets mode of the file ```hello``` to this: -rwxr-x-wx
 
+Task 10: chmod --reference=ollh hello = script that sets the mode of the file ```hello``` to the same as file ```olleh```
 
+Task 11:
+
+Task 12:
+
+Tak 13:
+
+Task 14:
+
+Task 15:
+
+Task 16:
+
+Task 17:
+
+Task 18:
