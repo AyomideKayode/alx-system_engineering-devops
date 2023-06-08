@@ -10,6 +10,10 @@ Task 3: sudo chown betty hello = script that changes the owner of the file ```he
 
 Task 4: touch hello = script that creates an empty file called ```hello```
 
-Task 5: chmod u+x ./hello = script that adds execute permissions to the owner of current working dir
+Task 5: chmod u+x hello = script that adds execute permissions to the owner of current working dir
+
+Task 6: chmod ug+x,o+r hello = script that adds execute permission to owner and the group owner, and read permission to other users
+
+Task 7: chmod ugo+x hello = script that adds execution permission to the owner, group owner and othe users
 
 
