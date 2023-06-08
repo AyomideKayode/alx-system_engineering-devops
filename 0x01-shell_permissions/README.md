@@ -26,7 +26,7 @@ Task 11: chmod -R +X . = script that add execute permissions to all subdirectori
 
 Task 12: mkdir -m 751 my_dir = script that creates a dir called ```my_dir``` with permissions 751 in the working dir
 
-Tak 13:
+Task 13: chgrp school hello = script that changes the group owner to ```school``` for the file ```hello```
 
 Task 14:
 
