@@ -14,7 +14,7 @@ Task 5: head /etc/passwd = display first 10 lines of file
 
 Task 6: head --lines=3 iacta | tail --lines=1 = script that displays the third line of the file ```iacta```
 
-Task 7: echo 'Best School' > "\*\\\'\"Best School\"\'\\\*$\?\*\*\*\*\*:)" = shell script that creates file named exactly with the added characters containing the text ```Best School```
+Task 7: echo 'Best School' > ```"\*\\\'\"Best School\"\'\\\*$\?\*\*\*\*\*:)"``` = shell script that creates file named exactly with the added characters containing the text ```Best School``` . Wrote the file name exactly as given, then i began to use backslash to negate some special characters inside the file name.
 
 Task 8: ls -la > ls_cwd_content = script that writes into the file ```ls_cwd_content``` the result of the command ```ls -la```. If the file ```ls_cwd_content``` already exists, it should be overwritten. If the file ```ls_cwd_content``` does not exist, create it.
 
