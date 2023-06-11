@@ -36,7 +36,7 @@ Task 16: grep -iA 3 root /etc/passwd = Display lines containing the pattern “r
 
 Task 17: grep -iv bin /etc/passwd = Display all the lines in the file ```/etc/passwd``` that do not contain the pattern “bin”
 
-Task 18:
+Task 18: grep -i "^[a-z]" /etc/ssh/sshd_config = Display all lines of the file ```/etc/ssh/sshd_config``` starting with a letter.
 
 Task 19: tr Ac Ze = Replace all characters ```A``` and ```c``` from input to ```Z``` and ```e``` respectively.
 
