@@ -34,4 +34,4 @@ Task 15: tr 'a-zA-Z' 'n-za-mN-ZA-M' = script that encodes and decodes text using
 
 Task 16: cat -n | grep [13579][[:space:]] | tr -s ' ' | cut -f2 =  script that prints every other line from the input, starting with the first line.
 
-Task 17:
+Task 17: printf "%o\n" $((5#`echo $WATER | tr 'water' '01234'` + 5#`echo $STIR | tr 'stir.' '01234'`)) | tr '01234567' 'bestchol' = shell script that adds the two numbers stored in the environment variables WATER and STIR and prints the result.
