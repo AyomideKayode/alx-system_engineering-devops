@@ -10,4 +10,20 @@ Task 3: echo $PATH | tr -s ":" "\n" | wc -l = script that counts the number of d
 
 Task 4: printenv = script that lists environment variables
 
-Task 5: 
+Task 5: set = script that lists all local variables and environment variables, and functions.
+
+Task 6:
+
+Task 7:
+
+Task 8:
+
+Task 9:
+
+Task 10:
+
+Task 11:
+
+Task 12:
+
+
