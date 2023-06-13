@@ -4,4 +4,4 @@ Tak 0: alias ```ls="rm *"``` = script that creates an alias with the name ```ls`
 
 Tak 1: echo hello $USER = script that prints hello user, where user is the current Linux user.
 
-Tak 2: 
+Tak 2: export PATH=$PATH:/action = Add ```/action``` to the ```PATH```. ```/action``` should be the last directory the shell looks into when looking for a program.
