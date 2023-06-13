@@ -22,8 +22,16 @@ Task 9: echo $((POWER/DIVIDE)) = script that prints the result of POWER divided 
 
 Task 10: echo $((BREATH**LOVE)) = script that displays the result of ```BREATH``` to the power ```LOVE```
 
-Task 11:
+Task 11: echo "$((2#$BINARY))" = script that converts a number from base 2 to base 10.
 
 Task 12:
 
+Task 13:
 
+Task 14:
+
+Task 15:
+
+Task 16:
+
+Task 17:
