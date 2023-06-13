@@ -12,7 +12,7 @@ Task 4: printenv = script that lists environment variables
 
 Task 5: set = script that lists all local variables and environment variables, and functions.
 
-Task 6:
+Task 6: BEST="School" =  script that creates a new local variable with name of ```BEST``` and value of ```School```
 
 Task 7:
 
