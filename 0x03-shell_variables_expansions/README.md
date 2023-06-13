@@ -32,6 +32,6 @@ Task 14: printf "%x\n" $DECIMAL = script that converts a number from base 10 to 
 
 Task 15: tr 'a-zA-Z' 'n-za-mN-ZA-M' = script that encodes and decodes text using the rot13 encryption. Assume ASCII.
 
-Task 16:
+Task 16: cat -n | grep [13579][[:space:]] | tr -s ' ' | cut -f2 =  script that prints every other line from the input, starting with the first line.
 
 Task 17:
