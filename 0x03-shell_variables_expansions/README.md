@@ -30,7 +30,7 @@ Task 13: printf "%.2f\n" $NUM = script that prints a number with two decimal pla
 
 Task 14: printf "%x\n" $DECIMAL = script that converts a number from base 10 to base 16.
 
-Task 15:
+Task 15: tr 'a-zA-Z' 'n-za-mN-ZA-M' = script that encodes and decodes text using the rot13 encryption. Assume ASCII.
 
 Task 16:
 
