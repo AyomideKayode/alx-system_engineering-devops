@@ -18,7 +18,7 @@ Task 7: export BEST="School" = script that creates a new global variable with th
 
 Task 8: echo "$((TRUEKNOWLEDGE+=128))" = script that prints the result of the addition of 128 with the value stored in the environment variable ```TRUEKNOWLEDGE```, followed by a new line
 
-Task 9:
+Task 9: echo $((POWER/DIVIDE)) = script that prints the result of POWER divided by DIVIDE, followed by a new line.
 
 Task 10:
 
