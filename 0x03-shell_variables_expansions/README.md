@@ -8,4 +8,6 @@ Tak 2: export PATH=$PATH:/action = Add ```/action``` to the ```PATH```. ```/acti
 
 Task 3: echo $PATH | tr -s ":" "\n" | wc -l = script that counts the number of directories in the ```PATH```
 
-Task 4: 
+Task 4: printenv = script that lists environment variables
+
+Task 5: 
