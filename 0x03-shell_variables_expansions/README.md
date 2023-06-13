@@ -14,7 +14,7 @@ Task 5: set = script that lists all local variables and environment variables, a
 
 Task 6: BEST="School" =  script that creates a new local variable with name of ```BEST``` and value of ```School```
 
-Task 7:
+Task 7: export BEST="School" = script that creates a new global variable with the name of ```BEST``` and value of ```School```
 
 Task 8:
 
