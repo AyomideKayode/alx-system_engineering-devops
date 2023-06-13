@@ -52,4 +52,4 @@ Task 24:
 
 Task 25: cut -c 1 | tr -d '\n' | sort =  script that decodes acrostics that use the first letter of each line.
 
-Task 26: 
+Task 26: tail -n +2 | cut -f -1 | sort -k 1 | uniq -c | sort -rnk 1 | head -n 11 | rev | cut -d ' ' -f -1 | rev = script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests. Order by number of requests, most active host or IP at the top 
