@@ -20,7 +20,7 @@ Task 8: echo "$((TRUEKNOWLEDGE+=128))" = script that prints the result of the ad
 
 Task 9: echo $((POWER/DIVIDE)) = script that prints the result of POWER divided by DIVIDE, followed by a new line.
 
-Task 10:
+Task 10: echo $((BREATH**LOVE)) = script that displays the result of ```BREATH``` to the power ```LOVE```
 
 Task 11:
 
