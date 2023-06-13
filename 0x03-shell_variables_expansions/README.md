@@ -16,7 +16,7 @@ Task 6: BEST="School" =  script that creates a new local variable with name of `
 
 Task 7: export BEST="School" = script that creates a new global variable with the name of ```BEST``` and value of ```School```
 
-Task 8:
+Task 8: echo "$((TRUEKNOWLEDGE+=128))" = script that prints the result of the addition of 128 with the value stored in the environment variable ```TRUEKNOWLEDGE```, followed by a new line
 
 Task 9:
 
