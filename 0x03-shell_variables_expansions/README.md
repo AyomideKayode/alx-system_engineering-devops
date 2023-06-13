@@ -28,7 +28,7 @@ Task 12: printf "%s\n" {a..z}{a..z} | grep -v "oo" = script that prints all poss
 
 Task 13: printf "%.2f\n" $NUM = script that prints a number with two decimal places, followed by a new line.
 
-Task 14:
+Task 14: printf "%x\n" $DECIMAL = script that converts a number from base 10 to base 16.
 
 Task 15:
 
