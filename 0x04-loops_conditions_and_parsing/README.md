@@ -175,10 +175,90 @@
 	20
 	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ 
 	```
+7. [Clock](./7-clock) :
+* Write a Bash script that displays the time for 12 hours and 59 minutes:
+	- display hours from 0 to 12
+	- display minutes from 1 to 59
+- Requirements:
+	- You must use the `while` loop (`for` and `until` are forbidden)
+- Note that in this example, we only display the first 70 lines using the head command.
+	```sh
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ ./7-clock | head -n 70
+	Hour: 0
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	11
+	12
+	13
+	14
+	15
+	16
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+	27
+	28
+	29
+	30
+	31
+	32
+	33
+	34
+	35
+	36
+	37
+	38
+	39
+	40
+	41
+	42
+	43
+	44
+	45
+	46
+	47
+	48
+	49
+	50
+	51
+	52
+	53
+	54
+	55
+	56
+	57
+	58
+	59
+	Hour: 1
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ 
+	```
 
 | Task | File |
 | ---- | ---- |
-| 7. Clock | [7-clock](./7-clock) |
 | 8. For ls | [8-for_ls](./8-for_ls) |
 | 9. To file, or not to file | [9-to_file_or_not_to_file](./9-to_file_or_not_to_file) |
 | 10. FizzBuzz | [10-fizzbuzz](./10-fizzbuzz) |
