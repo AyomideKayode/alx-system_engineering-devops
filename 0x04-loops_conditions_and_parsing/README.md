@@ -78,10 +78,27 @@
 	Best School
 	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$
 	```
+3. [Until Best School loop](./3-until_best_school) :
+* Write a Bash script that displays `Best School` 10 times.
+- Requirements:
+	- You must use the `until` loop (`for` and `while` are forbidden)
+	```sh
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ ./3-until_best_school 
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ 
+	```
 
 | Task | File |
 | ---- | ---- |
-| 3. Until Best School loop | [3-until_best_school](./3-until_best_school) |
 | 4. If 9, say Hi! | [4-if_9_say_hi](./4-if_9_say_hi) |
 | 5. 4 bad luck, 8 is your chance | [5-4_bad_luck_8_is_your_chance](./5-4_bad_luck_8_is_your_chance) |
 | 6. Superstitious numbers | [6-superstitious_numbers](./6-superstitious_numbers) |
