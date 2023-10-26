@@ -60,10 +60,27 @@
 * Note that:
 	- The first line of my Bash script starts with `#!/usr/bin/env bash`
 	- The second line of my Bash scripts is a comment explaining what it is doing
+2. [While Best School loop](./2-while_best_school) :
+* Write a Bash script that displays `Best School` 10 times.
+- Requirements:
+	- You must use the `while` loop (`for` and `until` are forbidden)
+	```sh
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ ./2-while_best_school 
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$
+	```
 
 | Task | File |
 | ---- | ---- |
-| 2. While Best School loop | [2-while_best_school](./2-while_best_school) |
 | 3. Until Best School loop | [3-until_best_school](./3-until_best_school) |
 | 4. If 9, say Hi! | [4-if_9_say_hi](./4-if_9_say_hi) |
 | 5. 4 bad luck, 8 is your chance | [5-4_bad_luck_8_is_your_chance](./5-4_bad_luck_8_is_your_chance) |
