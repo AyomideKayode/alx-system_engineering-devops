@@ -36,10 +36,33 @@
 	- **Keep the private key to yourself in a secure location**, you will use it later to connect to your servers using SSH. Some storing ideas are Dropbox, Google Drive, password manager, USB key. Failing to do so will prevent you to access your servers, which will prevent you from doing your projects
 	- If you decide to add a passphrase to your key, make sure to save this passphrase in a secure location, you will not be able to use your keys without the passphrase
 * SSH and RSA keys will be covered in depth in a later project.
+1. [For Best School loop](./1-for_best_school) :
+* Write a Bash script that displays `Best School` 10 times.
+- Requirement:
+	- You must use the `for` loop (`while` and `until` are forbidden)
+	```sh
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ head -n 2 1-for_best_school
+	#!/usr/bin/env bash
+	# Script that prints Best School to stdout 10 times using the for loop.
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ ./1-for_best_school 
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ 
+	```
+* Note that:
+	- The first line of my Bash script starts with `#!/usr/bin/env bash`
+	- The second line of my Bash scripts is a comment explaining what it is doing
 
 | Task | File |
 | ---- | ---- |
-| 1. For Best School loop | [1-for_best_school](./1-for_best_school) |
 | 2. While Best School loop | [2-while_best_school](./2-while_best_school) |
 | 3. Until Best School loop | [3-until_best_school](./3-until_best_school) |
 | 4. If 9, say Hi! | [4-if_9_say_hi](./4-if_9_say_hi) |
