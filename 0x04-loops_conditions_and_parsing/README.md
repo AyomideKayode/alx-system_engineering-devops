@@ -256,9 +256,34 @@
 	9
 	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ 
 	```
-
+8. [For ls](./8-for_ls) :
+* Write a Bash script that displays:
+	- The content of the current directory
+	- In a list format
+	- Where only the part of the name after the first dash is displayed (refer to the example)
+* Requirements:
+	- You must use the for loop (while and until are forbidden)
+	- Do not display hidden files
+	```sh
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ ls
+	0-RSA_public_key.pub  4-if_9_say_hi                  8-for_ls
+	1-for_best_school     5-4_bad_luck_8_is_your_chance  README.md
+	2-while_best_school   6-superstitious_numbers
+	3-until_best_school   7-clock
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ ./8-for_ls 
+	RSA_public_key.pub
+	for_best_school
+	while_best_school
+	until_best_school
+	if_9_say_hi
+	4_bad_luck_8_is_your_chance
+	superstitious_numbers
+	clock
+	for_ls
+	README.md
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ 
+	```
 | Task | File |
 | ---- | ---- |
-| 8. For ls | [8-for_ls](./8-for_ls) |
 | 9. To file, or not to file | [9-to_file_or_not_to_file](./9-to_file_or_not_to_file) |
 | 10. FizzBuzz | [10-fizzbuzz](./10-fizzbuzz) |
