@@ -116,10 +116,33 @@
 	Best School
 	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ 
 	```
+5. [4 bad luck, 8 is your chance](./5-4_bad_luck_8_is_your_chance) :
+* Write a Bash script that loops from 1 to 10 and:
+	- displays `bad luck` for the 4th loop iteration
+	- displays `good luck` for the 8th loop iteration
+	- displays `Best School` for the other iterations
+* Requirements:
+	- You must use the `while` loop (`for` and `until` are forbidden)
+	- You must use the `if`, `elif` and `else` statements
+	```sh
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ ./5-4_bad_luck_8_is_your_chance 
+	Best School
+	Best School
+	Best School
+	bad luck
+	Best School
+	Best School
+	Best School
+	good luck
+	Best School
+	Best School
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ 
+	```
+* For the most curious:
+	- [4 in the Chinese culture](https://en.wikipedia.org/wiki/Chinese_numerology#Four)
 
 | Task | File |
 | ---- | ---- |
-| 5. 4 bad luck, 8 is your chance | [5-4_bad_luck_8_is_your_chance](./5-4_bad_luck_8_is_your_chance) |
 | 6. Superstitious numbers | [6-superstitious_numbers](./6-superstitious_numbers) |
 | 7. Clock | [7-clock](./7-clock) |
 | 8. For ls | [8-for_ls](./8-for_ls) |
