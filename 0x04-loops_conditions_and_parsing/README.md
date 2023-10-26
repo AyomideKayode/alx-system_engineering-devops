@@ -349,3 +349,46 @@
 	Buzz
 	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ 
 	```
+11. [Read and cut](./100-read_and_cut) :
+* help: `read`
+- Write a Bash script that displays the content of the file `/etc/passwd`.
+- Your script should only display:
+	- username
+	- user id
+	- Home directory path for the user
+- Requirements:
+	- You must use the `while` loop (`for` and `until` are forbidden)
+	```sh
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ ./100-read_and_cut 
+	root:0:/root
+	daemon:1:/usr/sbin
+	bin:2:/bin
+	sys:3:/dev
+	sync:4:/bin
+	games:5:/usr/games
+	man:6:/var/cache/man
+	lp:7:/var/spool/lpd
+	mail:8:/var/mail
+	news:9:/var/spool/news
+	uucp:10:/var/spool/uucp
+	proxy:13:/bin
+	www-data:33:/var/www
+	backup:34:/var/backups
+	list:38:/var/list
+	irc:39:/var/run/ircd
+	gnats:41:/var/lib/gnats
+	nobody:65534:/nonexistent
+	systemd-network:100:/run/systemd/netif
+	systemd-resolve:101:/run/systemd/resolve
+	syslog:102:/home/syslog
+	messagebus:103:/nonexistent
+	_apt:104:/nonexistent
+	lxd:105:/var/lib/lxd/
+	uuidd:106:/run/uuidd
+	dnsmasq:107:/var/lib/misc
+	landscape:108:/var/lib/landscape
+	sshd:109:/run/sshd
+	pollinate:110:/var/cache/pollinate
+	kazzywiz:1000:/home/kazzywiz
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ 
+	```
