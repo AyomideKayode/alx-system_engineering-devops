@@ -22,10 +22,23 @@
 * What are files and other comparison operators, and how to use them
 
 ## Description of what each file shows (Tasks):
+0. [Create a SSH RSA key pair](./0-RSA_public_key.pub) :
+* Read for this task:
+	- [Linux and Mac OS users](https://askubuntu.com/questions/61557/how-do-i-set-up-ssh-authentication-keys)
+	- [Windows users](https://docs.rackspace.com/docs/generating-rsa-keys-with-ssh-puttygen)
+* man: `ssh-keygen`
+* You will soon have to manage your own servers concept page hosted on remote [data centers](https://www.youtube.com/watch?v=iuqXFC_qIvA&feature=youtu.be&t=46). We need to set them up with your RSA public key so that you can access them via SSH.
+* Create a RSA key pair.
+* Requirements:
+
+	- Share your public key in your answer file `0-RSA_public_key.pub`
+	- Fill the `SSH public key` field of your `intranet profile` with the public key you just generated
+	- **Keep the private key to yourself in a secure location**, you will use it later to connect to your servers using SSH. Some storing ideas are Dropbox, Google Drive, password manager, USB key. Failing to do so will prevent you to access your servers, which will prevent you from doing your projects
+	- If you decide to add a passphrase to your key, make sure to save this passphrase in a secure location, you will not be able to use your keys without the passphrase
+* SSH and RSA keys will be covered in depth in a later project.
 
 | Task | File |
 | ---- | ---- |
-| 0. Create a SSH RSA key pair | [0-RSA_public_key.pub](./0-RSA_public_key.pub) |
 | 1. For Best School loop | [1-for_best_school](./1-for_best_school) |
 | 2. While Best School loop | [2-while_best_school](./2-while_best_school) |
 | 3. Until Best School loop | [3-until_best_school](./3-until_best_school) |
