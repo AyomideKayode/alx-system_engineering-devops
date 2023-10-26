@@ -96,10 +96,29 @@
 	Best School
 	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ 
 	```
+4. [If 9, say Hi!](./4-if_9_say_hi) :
+* Write a Bash script that displays `Best School` 10 times, but for the 9th iteration, displays `Best School` and then `Hi` on a new line.
+* Requirements:
+	- You must use the `while` loop (`for` and `until` are forbidden)
+	- You must use the `if` statement
+	```sh
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ ./4-if_9_say_hi 
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Best School
+	Hi
+	Best School
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing$ 
+	```
 
 | Task | File |
 | ---- | ---- |
-| 4. If 9, say Hi! | [4-if_9_say_hi](./4-if_9_say_hi) |
 | 5. 4 bad luck, 8 is your chance | [5-4_bad_luck_8_is_your_chance](./5-4_bad_luck_8_is_your_chance) |
 | 6. Superstitious numbers | [6-superstitious_numbers](./6-superstitious_numbers) |
 | 7. Clock | [7-clock](./7-clock) |
