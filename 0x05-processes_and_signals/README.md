@@ -73,12 +73,28 @@
 	kazzywiz  9829  0.0  0.0  14864  1008 pts/5    S+   15:25   0:00  |                       |           \_ grep bash
 	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$ 
 	```
-
-
+3. [Show your Bash PID made easy](./3-show_your_bash_pid_made_easy) :
+* Write a Bash script that displays the PID, along with the process name, of processes whose name contain the word `bash`.
+- Requirements:
+	- You cannot use `ps`
+	```sh
+	sylvain@ubuntu$ ./3-show_your_bash_pid_made_easy
+	4404 bash
+	4555 bash
+	sylvain@ubuntu$ ./3-show_your_bash_pid_made_easy
+	4404 bash
+	4557 bash
+	sylvain@ubuntu$ 
+	```
+- Here we can see that:
+	- For the first iteration: `bash` PID is `4404` and that the `3-show_your_bash_pid_made_easy` script PID is `4555`
+	- For the second iteration: `bash` PID is `4404` and that the `3-show_your_bash_pid_made_easy` script PID is `4557`
+* P.S (pun intended😅): 
+	- The key point to note here is that the bash processes have the same PID in both iterations because they are the same processes that were running before you ran the script. However, the PID of the script (3-show_your_bash_pid_made_easy) is different in each iteration because a new instance of the script is being executed, and each instance of the script has a unique PID.
+	- In the context of the script, it's listing the bash processes it finds, along with the PID of the script itself. This is why you see different script PIDs in each iteration, but the bash process PID remains the same because it's the same running bash process.
 
 | Task | File |
 | ---- | ---- |
-| 3. Show your Bash PID made easy | [3-show_your_bash_pid_made_easy](./3-show_your_bash_pid_made_easy) |
 | 4. To infinity and beyond | [4-to_infinity_and_beyond](./4-to_infinity_and_beyond) |
 | 5. Don't stop me now! | [5-dont_stop_me_now](./5-dont_stop_me_now) |
 | 6. Stop me if you can | [6-stop_me_if_you_can](./6-stop_me_if_you_can) |
