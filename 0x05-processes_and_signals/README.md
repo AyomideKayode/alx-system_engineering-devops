@@ -115,10 +115,16 @@
 	- You must use `kill`
 	<img src="./terminate-process.JPG" alt="Terminate-Process" width=100%>
 - I opened 2 terminals in this example, started by running my `4-to_infinity_and_beyond` Bash script in terminal #0 and then moved on terminal #1 to run `5-dont_stop_me_now`. We can then see in terminal #0 that my process has been terminated.
+6. [Stop me if you can](./6-stop_me_if_you_can) :
+* Write a Bash script that stops `4-to_infinity_and_beyond` process.
+- Requirements:
+	- You cannot use `kill` or `killall`
+
+
+
 
 
 | Task | File |
 | ---- | ---- |
-| 6. Stop me if you can | [6-stop_me_if_you_can](./6-stop_me_if_you_can) |
 | 7. Highlander | [7-highlander](./7-highlander) |
 | 8. Beheaded process | [8-beheaded_process](./8-beheaded_process) |
