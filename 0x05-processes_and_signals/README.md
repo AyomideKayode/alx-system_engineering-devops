@@ -155,7 +155,105 @@
 	I hate the kill command
 	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$ 
 	```
+10. [Manage my process](./101-manage_my_process) :
+* Programs that are detached from the terminal and running in the background are called daemons or processes, need to be managed. The general minimum set of instructions is: `start`, `restart` and `stop`. The most popular way of doing so on Unix system is to use the init scripts.
+- Write a `manage_my_process` Bash script that:
+	- Indefinitely writes `I am alive!` to the file `/tmp/my_process`
+	- In between every `I am alive!` message, the program should pause for 2 seconds
+- Write Bash (init) script `101-manage_my_process` that manages `manage_my_process`. (both files need to be pushed to git)
+- Requirements:
+	- When passing the argument `start`:
+		- Starts `manage_my_process`
+		- Creates a file containing its PID in `/var/run/my_process.pid`
+		- Displays `manage_my_process started`
+	- When passing the argument `stop`:
+		- Stops `manage_my_process`
+		- Deletes the file `/var/run/my_process.pid`
+		- Displays `manage_my_process stopped`
+	- When passing the argument `restart`
+		- Stops `manage_my_process`
+		- Deletes the file `/var/run/my_process.pid`
+		- Starts `manage_my_process`
+		- Creates a file containing its PID in `/var/run/my_process.pid`
+		- Displays `manage_my_process restarted`
+	- Displays Usage: `manage_my_process {start|stop|restart}` if any other argument or no argument is passed
+* Note that this init script is far from being perfect (but good enough for the sake of manipulating process and PID file), for example we do not handle the case where we check if a process is already running when doing `./101-manage_my_process start`, in our case it will simply create a new process instead of saying that it is already started.
+	```sh
+	sylvain@ubuntu$ sudo ./101-manage_my_process
+	Usage: manage_my_process {start|stop|restart}
+	sylvain@ubuntu$ sudo ./101-manage_my_process start
+	manage_my_process started
+	sylvain@ubuntu$ tail -f -n0 /tmp/my_process 
+	I am alive!
+	I am alive!
+	I am alive!
+	I am alive!
+	^C
+	sylvain@ubuntu$ sudo ./101-manage_my_process stop
+	manage_my_process stopped
+	sylvain@ubuntu$ cat /var/run/my_process.pid 
+	cat: /var/run/my_process.pid: No such file or directory
+	sylvain@ubuntu$ tail -f -n0 /tmp/my_process 
+	^C
+	sylvain@ubuntu$ sudo ./101-manage_my_process start
+	manage_my_process started
+	sylvain@ubuntu$ cat /var/run/my_process.pid 
+	11864
+	sylvain@ubuntu$ sudo ./101-manage_my_process restart
+	manage_my_process restarted
+	sylvain@ubuntu$ cat /var/run/my_process.pid 
+	11918
+	sylvain@ubuntu$ tail -f -n0 /tmp/my_process 
+	I am alive!
+	I am alive!
+	I am alive!
+	^C
+	sylvain@ubuntu$ 
+	```
+11. [Zombie](./102-zombie.c) :
+* Read [what a zombie process is](https://zombieprocess.wordpress.com/what-is-a-zombie-process/).
+- Write a C program that creates 5 zombie processes.
+- Requirements:
+	- For every zombie process created, it displays `Zombie process created, PID: ZOMBIE_PID`
+	- Your code should use the Betty style. It will be checked using `betty-style.pl` and `betty-doc.pl`
+	- When your code is done creating the parent process and the zombies, use the function below
+	```c
+	int infinite_while(void)
+	{
+		while (1)
+		{
+			sleep(1);
+		}
+		return (0);
+	}
+	```
+	```sh
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$ betty 102-zombie.c 
 
+	========== 102-zombie.c ==========
+	infinite_while
+	main
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$ gcc 102-zombie.c -o zombie
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./zombie 
+	Zombie process created, PID: 27987
+	Zombie process created, PID: 27988
+	Zombie process created, PID: 27989
+	Zombie process created, PID: 27991
+	Zombie process created, PID: 27990
+	^C
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$ 
+	```
+	```sh
+	sylvain@ubuntu$ ps aux | grep -e 'Z+.*<defunct>'
+	sylvain  13527  0.0  0.0      0     0 pts/0    Z+   01:19   0:00 [zombie] <defunct>
+	sylvain  13528  0.0  0.0      0     0 pts/0    Z+   01:19   0:00 [zombie] <defunct>
+	sylvain  13529  0.0  0.0      0     0 pts/0    Z+   01:19   0:00 [zombie] <defunct>
+	sylvain  13530  0.0  0.0      0     0 pts/0    Z+   01:19   0:00 [zombie] <defunct>
+	sylvain  13531  0.0  0.0      0     0 pts/0    Z+   01:19   0:00 [zombie] <defunct>
+	sylvain  13533  0.0  0.1  10460   964 pts/2    S+   01:19   0:00 grep --color=auto -e Z+.*<defunct>
+	sylvain@ubuntu$
+	```
+* In Terminal #0, I start by compiling `102-zombie.c` and executing `zombie` which creates 5 zombie processes. In Terminal #1, I display the list of processes and look for lines containing `Z+.*<defunct>` which catches zombie process.
 ---
 ### Environment
 * Language: Bash Scripts
