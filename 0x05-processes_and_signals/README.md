@@ -108,10 +108,17 @@
 	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$ 
 	```
 - <em>Note that I `ctrl+c` (killed) the Bash script in the example.</em>
+5. [Don't stop me now!](./5-dont_stop_me_now) :
+* We stopped our `4-to_infinity_and_beyond` process using `ctrl+c` in the previous task, there is actually another way to do this.
+- Write a Bash script that stops `4-to_infinity_and_beyond` process.
+- Requirements:
+	- You must use `kill`
+	<img src="./terminate-process.JPG" alt="Terminate-Process" width=100%>
+- I opened 2 terminals in this example, started by running my `4-to_infinity_and_beyond` Bash script in terminal #0 and then moved on terminal #1 to run `5-dont_stop_me_now`. We can then see in terminal #0 that my process has been terminated.
+
 
 | Task | File |
 | ---- | ---- |
-| 5. Don't stop me now! | [5-dont_stop_me_now](./5-dont_stop_me_now) |
 | 6. Stop me if you can | [6-stop_me_if_you_can](./6-stop_me_if_you_can) |
 | 7. Highlander | [7-highlander](./7-highlander) |
 | 8. Beheaded process | [8-beheaded_process](./8-beheaded_process) |
