@@ -127,10 +127,20 @@
 - Make a copy of your `6-stop_me_if_you_can` script, name it `67-stop_me_if_you_can`, that kills the `7-highlander` process instead of the `4-to_infinity_and_beyond` one.
 	<img src="./die-homelander.JPG" alt="die-homelander" width=100%>
 - I started `7-highlander` in Terminal #0 and then run `67-stop_me_if_you_can` in terminal #1, for every iteration we can see `I am invincible!!!` appearing in terminal #0.
+8. [Beheaded process](./8-beheaded_process) :
+* Write a Bash script that kills the process `7-highlander`.
+<img src="./homelander-finally.JPG" alt="homelander-dies" width=100%>
 
+---
+### Environment
+* Language: Bash Scripts
+    * OS: Ubuntu 20.04 LTS
+    * Executable: `chmod +x [filename]`; run with `./[filename]`
+    * Style guidelines:
+        - [Shellcheck](https://github.com/koalaman/shellcheck)
+---
+## Author
 
-
-
-| Task | File |
-| ---- | ---- |
-| 8. Beheaded process | [8-beheaded_process](./8-beheaded_process) |
+- **<em>Website</em>** - [Ayomide Kayode](https://github.com/AyomideKayode)
+- **<em>ALX Software Engineering Program</em>** - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- **<em>Twitter</em>** - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
