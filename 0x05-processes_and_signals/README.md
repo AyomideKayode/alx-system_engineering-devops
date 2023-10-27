@@ -92,10 +92,25 @@
 * P.S (pun intended😅): 
 	- The key point to note here is that the bash processes have the same PID in both iterations because they are the same processes that were running before you ran the script. However, the PID of the script (3-show_your_bash_pid_made_easy) is different in each iteration because a new instance of the script is being executed, and each instance of the script has a unique PID.
 	- In the context of the script, it's listing the bash processes it finds, along with the PID of the script itself. This is why you see different script PIDs in each iteration, but the bash process PID remains the same because it's the same running bash process.
+4. [To infinity and beyond](./4-to_infinity_and_beyond) :
+* Write a Bash script that displays To infinity and beyond indefinitely.
+	- Requirements:
+		- In between each iteration of the loop, add a `sleep 2`
+	```sh
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./4-to_infinity_and_beyond 
+	To infinity and beyond
+	To infinity and beyond
+	To infinity and beyond
+	To infinity and beyond
+	To infinity and beyond
+	To infinity and beyond
+	^C
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$ 
+	```
+- <em>Note that I `ctrl+c` (killed) the Bash script in the example.</em>
 
 | Task | File |
 | ---- | ---- |
-| 4. To infinity and beyond | [4-to_infinity_and_beyond](./4-to_infinity_and_beyond) |
 | 5. Don't stop me now! | [5-dont_stop_me_now](./5-dont_stop_me_now) |
 | 6. Stop me if you can | [6-stop_me_if_you_can](./6-stop_me_if_you_can) |
 | 7. Highlander | [7-highlander](./7-highlander) |
