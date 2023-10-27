@@ -58,10 +58,26 @@
 	kazzywiz  1636  0.0  0.1  23208  5396 pts/5    Ss+  14:56   0:00  |                       |   \_ /bin/bash --init-file /home/kazzywiz/.vscode-server/bin/f1b07bd25dfad64b0167beb15359ae573aecd2cc/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
 	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$
 	```
+2. [Show your Bash PID](./2-show_your_bash_pid) :
+* Using your previous exercise command, write a Bash script that displays lines containing the `bash` word, thus allowing you to easily get the PID of your Bash process.
+- Requirements:
+	- You cannot use `pgrep`
+	- The third line of your script must be `# shellcheck disable=SC2009` (for more info about ignoring `shellcheck` error [here](https://github.com/koalaman/shellcheck/wiki/Ignore))
+	```sh
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$ shell 2-show_your_bash_pid 
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./2-show_your_bash_pid 
+	kazzywiz  1011  0.0  0.1  23248  5328 pts/0    Ss+  14:01   0:00  |       \_ -bash
+	kazzywiz  1182  0.0  0.1  23084  4808 pts/1    S+   14:01   0:00  |   \_ -bash
+	kazzywiz  1636  0.0  0.1  23208  5408 pts/5    Ss   14:56   0:00  |                       |   \_ /bin/bash --init-file /home/kazzywiz/.vscode-server/bin/f1b07bd25dfad64b0167beb15359ae573aecd2cc/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+	kazzywiz  9825  0.0  0.0  13324  3168 pts/5    S+   15:25   0:00  |                       |       \_ bash ./2-show_your_bash_pid
+	kazzywiz  9829  0.0  0.0  14864  1008 pts/5    S+   15:25   0:00  |                       |           \_ grep bash
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$ 
+	```
+
+
 
 | Task | File |
 | ---- | ---- |
-| 2. Show your Bash PID | [2-show_your_bash_pid](./2-show_your_bash_pid) |
 | 3. Show your Bash PID made easy | [3-show_your_bash_pid_made_easy](./3-show_your_bash_pid_made_easy) |
 | 4. To infinity and beyond | [4-to_infinity_and_beyond](./4-to_infinity_and_beyond) |
 | 5. Don't stop me now! | [5-dont_stop_me_now](./5-dont_stop_me_now) |
