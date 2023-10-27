@@ -119,12 +119,18 @@
 * Write a Bash script that stops `4-to_infinity_and_beyond` process.
 - Requirements:
 	- You cannot use `kill` or `killall`
-
+7. [Highlander](./7-highlander) :
+* Write a Bash script that displays:
+	- `To infinity and beyond` indefinitely
+	- With a `sleep 2` in between each iteration
+	- `I am invincible!!!` when receiving a `SIGTERM` signal
+- Make a copy of your `6-stop_me_if_you_can` script, name it `67-stop_me_if_you_can`, that kills the `7-highlander` process instead of the `4-to_infinity_and_beyond` one.
+	<img src="./die-homelander.JPG" alt="die-homelander" width=100%>
+- I started `7-highlander` in Terminal #0 and then run `67-stop_me_if_you_can` in terminal #1, for every iteration we can see `I am invincible!!!` appearing in terminal #0.
 
 
 
 
 | Task | File |
 | ---- | ---- |
-| 7. Highlander | [7-highlander](./7-highlander) |
 | 8. Beheaded process | [8-beheaded_process](./8-beheaded_process) |
