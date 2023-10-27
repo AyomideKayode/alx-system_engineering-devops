@@ -131,6 +131,31 @@
 * Write a Bash script that kills the process `7-highlander`.
 <img src="./homelander-finally.JPG" alt="homelander-dies" width=100%>
 
+9. [Process and PID file](./100-process_and_pid_file) :
+* Write a Bash script that:
+	- Creates the file `/var/run/myscript.pid` containing its PID
+	- Displays `To infinity and beyond` indefinitely
+	- Displays `I hate the kill command` when receiving a SIGTERM signal
+	- Displays `Y U no love me?!` when receiving a SIGINT signal
+	- Deletes the file `/var/run/myscript.pid` and terminates itself when receiving a SIGQUIT or SIGTERM signal
+	```sh
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$ ./100-process_and_pid_file 
+	./100-process_and_pid_file: line 20: /var/run/myscript.pid: Permission denied
+	To infinity and beyond
+	To infinity and beyond
+	To infinity and beyond
+	^CY U no love me?!
+	To infinity and beyond
+	To infinity and beyond
+	To infinity and beyond
+	^CY U no love me?!
+	To infinity and beyond
+	To infinity and beyond
+	To infinity and beyond
+	I hate the kill command
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x05-processes_and_signals$ 
+	```
+
 ---
 ### Environment
 * Language: Bash Scripts
