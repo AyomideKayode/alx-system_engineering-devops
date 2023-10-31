@@ -89,8 +89,22 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 	h8n$
 	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x06-regular_expressions$  
 	```
+6. [Call me maybe](./6-phone_number.rb) :
+* This task is brought to you by a professional advisor [Neha Jain](https://twitter.com/_nehajain), Senior Software Engineer at LinkedIn.
+* Requirements
+	- The regular expression must match a 10 digit phone number
+	```sh
+	sylvain@ubuntu$ ./6-phone_number.rb 4155049898 | cat -e
+	4155049898$
+	sylvain@ubuntu$ ./6-phone_number.rb " 4155049898" | cat -e
+	$
+	sylvain@ubuntu$ ./6-phone_number.rb "415 504 9898" | cat -e
+	$
+	sylvain@ubuntu$ ./6-phone_number.rb "415-504-9898" | cat -e
+	$
+	sylvain@ubuntu$
+	```
 
 | Task | File |
 | ---- | ---- |
-| 6. Call me maybe | [6-phone_number.rb](./6-phone_number.rb) |
 | 7. OMG WHY ARE YOU SHOUTING? | [7-OMG_WHY_ARE_YOU_SHOUTING.rb](./7-OMG_WHY_ARE_YOU_SHOUTING.rb) |
