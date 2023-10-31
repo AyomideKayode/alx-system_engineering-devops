@@ -1,5 +1,5 @@
 # Project: 0x06. Regular expression
-<img src="./project_aid/regex_now_2_problems.jpg" alt="Regex_2_problems" width=50%>
+<img src="./project_aid/regex_now_2_problems.jpg" alt="Regex_2_problems" width=75%>
 
 ## Background Context
 * For this project, you have to build your regular expression using Oniguruma, a regular expression library that which is used by Ruby by default. Note that other regular expression libraries sometimes have different properties.
@@ -54,11 +54,17 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 * Requirements:
 	- Find the regular expression that will match the above cases
 	- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+* The [website](regex101.com) is awesome to test out how exactly it works. So we just insert the test string from the image above (left part) and then put in the regular expression `hbt{2,5}n` and see how it matches.
+2. [Repetition Token #1](./2-repetition_token_1.rb) :
+<img src="./project_aid/regex-task2.png" alt="Task-2" width=100%>
+
+* Requirements:
+	- Find the regular expression that will match the above cases
+	- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 
 
 | Task | File |
 | ---- | ---- |
-| 2. Repetition Token #1 | [2-repetition_token_1.rb](./2-repetition_token_1.rb) |
 | 3. Repetition Token #2 | [3-repetition_token_2.rb](./3-repetition_token_2.rb) |
 | 4. Repetition Token #3 | [4-repetition_token_3.rb](./4-repetition_token_3.rb) |
 | 5. Not quite HBTN yet | [5-beginning_and_end.rb](./5-beginning_and_end.rb) |
