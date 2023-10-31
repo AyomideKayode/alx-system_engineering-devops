@@ -67,10 +67,16 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 * Requirements:
 	- Find the regular expression that will match the above cases
 	- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+4. [Repetition Token #3](./4-repetition_token_3.rb) :
+<img src="./project_aid/regex-task4.png" alt="Task-4" width=100%>
+
+* Requirements:
+	- Find the regular expression that will match the above cases
+	- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+	- Your regex should not contain square brackets
 
 | Task | File |
 | ---- | ---- |
-| 4. Repetition Token #3 | [4-repetition_token_3.rb](./4-repetition_token_3.rb) |
 | 5. Not quite HBTN yet | [5-beginning_and_end.rb](./5-beginning_and_end.rb) |
 | 6. Call me maybe | [6-phone_number.rb](./6-phone_number.rb) |
 | 7. OMG WHY ARE YOU SHOUTING? | [7-OMG_WHY_ARE_YOU_SHOUTING.rb](./7-OMG_WHY_ARE_YOU_SHOUTING.rb) |
