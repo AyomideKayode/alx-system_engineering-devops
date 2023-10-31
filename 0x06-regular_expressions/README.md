@@ -74,9 +74,23 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 	- Find the regular expression that will match the above cases
 	- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 	- Your regex should not contain square brackets
+5. [Not quite HBTN yet](./5-beginning_and_end.rb) :
+* Requirements:
+	- The regular expression must be exactly matching a string that starts with `h` ends with `n` and can have any single character in between
+	- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+	```sh
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x06-regular_expressions$ ./5-beginning_and_end.rb 'hn' | cat -e
+	$
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x06-regular_expressions$ ./5-beginning_and_end.rb 'hbn' | cat -e
+	hbn$
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x06-regular_expressions$ ./5-beginning_and_end.rb 'hbtn' | cat -e
+	$
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x06-regular_expressions$ ./5-beginning_and_end.rb 'h8n' | cat -e
+	h8n$
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x06-regular_expressions$  
+	```
 
 | Task | File |
 | ---- | ---- |
-| 5. Not quite HBTN yet | [5-beginning_and_end.rb](./5-beginning_and_end.rb) |
 | 6. Call me maybe | [6-phone_number.rb](./6-phone_number.rb) |
 | 7. OMG WHY ARE YOU SHOUTING? | [7-OMG_WHY_ARE_YOU_SHOUTING.rb](./7-OMG_WHY_ARE_YOU_SHOUTING.rb) |
