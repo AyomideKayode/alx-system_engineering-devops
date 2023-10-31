@@ -15,7 +15,7 @@ sylvain@ubuntu$ ./example.rb 127.0.0.1
 127.0.0.1
 sylvain@ubuntu$ ./example.rb 127.0.0.a
 ```
-
+* Install with ruby with: `sudo apt install ruby-full`
 
 ## Resources
 
@@ -27,11 +27,30 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 * [Use a regular expression against a problem: now you have 2 problems](https://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/)
 * [Learn Regular Expressions with simple, interactive exercises](https://regexone.com/)
 
-## Tasks
+## Description of what each file shows (Tasks):
+* project_aid	--- folder that contains concept to better understand the project and JPEGs for README.
+* Files that start with:
+0. [Simply matching School](./0-simply_match_school.rb):
+<img src="./project_aid/regex-task0.png" alt="Task-0" width=100%>
+
+* Requirements:
+	- The regular expression must match `School`
+	- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+- Example:
+	```sh
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x06-regular_expressions$ ./0-simply_match_school.rb School | cat -e
+	School$
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x06-regular_expressions$ ./0-simply_match_school.rb "Best School" | cat -e
+	School$
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x06-regular_expressions$ ./0-simply_match_school.rb "School Best School" | cat -e
+	SchoolSchool$
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x06-regular_expressions$ ./0-simply_match_school.rb "Grace Hopper" | cat -e
+	$
+	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x06-regular_expressions$ 
+	```
 
 | Task | File |
 | ---- | ---- |
-| 0. Simply matching School | [0-simply_match_school.rb](./0-simply_match_school.rb) |
 | 1. Repetition Token #0 | [1-repetition_token_0.rb](./1-repetition_token_0.rb) |
 | 2. Repetition Token #1 | [2-repetition_token_1.rb](./2-repetition_token_1.rb) |
 | 3. Repetition Token #2 | [3-repetition_token_2.rb](./3-repetition_token_2.rb) |
