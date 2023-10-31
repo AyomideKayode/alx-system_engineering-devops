@@ -1,5 +1,5 @@
 # Project: 0x06. Regular expression
-<img src="./project_aid/regex_now_2_problems.jpg" alt="Regex_2_problems" width=100%>
+<img src="./project_aid/regex_now_2_problems.jpg" alt="Regex_2_problems" width=50%>
 
 ## Background Context
 * For this project, you have to build your regular expression using Oniguruma, a regular expression library that which is used by Ruby by default. Note that other regular expression libraries sometimes have different properties.
@@ -48,10 +48,16 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 	$
 	kazzywiz@Kazzywiz:~/alx-system_engineering-devops/0x06-regular_expressions$ 
 	```
+1. [Repetition Token #0](./1-repetition_token_0.rb) :
+<img src="./project_aid/regex-task1.png" alt="Task-1" width=100%>
+
+* Requirements:
+	- Find the regular expression that will match the above cases
+	- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+
 
 | Task | File |
 | ---- | ---- |
-| 1. Repetition Token #0 | [1-repetition_token_0.rb](./1-repetition_token_0.rb) |
 | 2. Repetition Token #1 | [2-repetition_token_1.rb](./2-repetition_token_1.rb) |
 | 3. Repetition Token #2 | [3-repetition_token_2.rb](./3-repetition_token_2.rb) |
 | 4. Repetition Token #3 | [4-repetition_token_3.rb](./4-repetition_token_3.rb) |
