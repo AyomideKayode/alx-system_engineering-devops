@@ -1,4 +1,5 @@
 # Project: 0x08. Networking basics #1
+<img src="no-place-like-127.png" alt="readme-pix" width=75%>
 
 ## Resources
 
