@@ -16,3 +16,6 @@
 - [0x03](./0x03-shell_variables_expansions) : Shell, init files, Variables and Expansions.
 - [0x04](./0x04-loops_conditions_and_parsing) : Loops, Conditions and Parsing.
 - [0x05](./0x05-processes_and_signals) : Processes and Signals.
+- [0x06](./0x06-regular_expressions/) : Regular Expressions.
+- [0x07](./0x07-networking_basics/) : Networking Basics #0.
+- [0x08](./0x08-networking_basics_2/) : Networking Basics #1.
