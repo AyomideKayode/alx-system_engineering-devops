@@ -18,4 +18,4 @@ echo "Hello World!" > /var/www/html/index.html
 # sed -i '/listen 80 default_server;/c\listen 80;' /etc/nginx/sites-available/default
 
 # start nginx configuration
-service nginx start
+sudo service nginx start
