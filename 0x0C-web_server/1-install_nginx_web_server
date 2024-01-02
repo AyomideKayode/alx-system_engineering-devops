@@ -17,5 +17,5 @@ echo "Hello World!" > /var/www/html/index.html
 # Ensure nginx is listening on port 80
 # sed -i '/listen 80 default_server;/c\listen 80;' /etc/nginx/sites-available/default
 
-# start nginx configuration
-sudo service nginx start
+# restart nginx configuration
+sudo service nginx restart
