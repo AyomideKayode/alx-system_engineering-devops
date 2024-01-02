@@ -9,6 +9,8 @@ sudo apt-get -y update
 # Install nginx
 sudo apt-get install -y nginx
 
+ufw allow 'Nginx HTTP'
+
 # Create a custom index.html file
 echo "Hello World!" > /var/www/html/index.html
 
