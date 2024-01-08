@@ -58,3 +58,49 @@ Requirements:
 - For your answer file, write a Bash script that configures a new Ubuntu machine to respect above requirements
 
 Example:
+
+```sh
+ayomide@Kazzywiz:~/alx-system_engineering-devops/0x0F-load_balancer$ curl -Is 34.229.137.67
+HTTP/1.1 200 OK
+server: nginx/1.18.0 (Ubuntu)
+date: Mon, 08 Jan 2024 16:34:00 GMT
+content-type: text/html
+content-length: 612
+last-modified: Wed, 03 Jan 2024 14:15:41 GMT
+etag: "65956c0d-264"
+x-served-by: 444607-web-01
+accept-ranges: bytes
+
+ayomide@Kazzywiz:~/alx-system_engineering-devops/0x0F-load_balancer$ curl -Is 34.229.137.67
+HTTP/1.1 200 OK
+server: nginx/1.18.0 (Ubuntu)
+date: Mon, 08 Jan 2024 16:34:47 GMT
+content-type: text/html
+content-length: 612
+last-modified: Mon, 08 Jan 2024 15:45:21 GMT
+etag: "659c1891-264"
+x-served-by: 444607-web-02
+accept-ranges: bytes
+
+ayomide@Kazzywiz:~/alx-system_engineering-devops/0x0F-load_balancer$
+```
+
+Make sure that HAProxy is installed in the lb-01 server before running the curl commands in your terminal.
+
+---
+
+### Environment
+
+- Language: Bash Scripts
+  - OS: Ubuntu 20.04 LTS
+  - Executable: `chmod +x [filename]`; run with `./[filename]`
+  - Style guidelines:
+    - [Shellcheck](https://github.com/koalaman/shellcheck)
+
+---
+
+## Author
+
+- **<em>Website</em>** - [Ayomide Kayode](https://github.com/AyomideKayode)
+- **<em>ALX Software Engineering Program</em>** - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- **<em>Twitter</em>** - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
