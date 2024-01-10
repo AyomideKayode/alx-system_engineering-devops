@@ -1,14 +1,23 @@
 #!/usr/bin/env bash
+# Nginx must be running, and listening on port 80 of all the server’s active IPv4 IPs
 
-# Requirement: Nginx must be running, and listening on port 80
-# of all the server’s active IPv4 IPs
-# Bug: sudo nginx status returns 'not running'; netstat -lpn does not show port 80
-# Solution: https://stackoverflow.com/questions/16021481/nginx-not-listening-to-port-80
+# Install Nginx if not already installed
+sudo apt-get update
+sudo apt-get install -y nginx
 
-#rm /etc/nginx/sites-enabled/default
-#ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-#sudo service nginx restart
+# Update Nginx default configuration to listen on port 80
+echo "server { listen 80; }" | sudo tee /etc/nginx/sites-available/default > /dev/null
 
-sudo sed -i "s/sites-enabled/sites-available/" /etc/nginx/nginx.conf
+# Create a symbolic link to enable the default site
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+
+# Restart Nginx
 sudo service nginx restart
+
+# Verify that Nginx is listening on port 80 (Additionl checks?)
+#if sudo netstat -tuln | grep -q "0.0.0.0:80"; then
+#    echo "Nginx is now listening on port 80."
+#else
+#    echo "Failed to configure Nginx to listen on port 80."
+#fi
 
