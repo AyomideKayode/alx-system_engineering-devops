@@ -32,13 +32,13 @@ Requirements:
 - Add the subdomain `web-02` to your domain, point it to your `web-02` IP
 - Your Bash script must accept 2 arguments:
   1. `domain`:
-      - type: string
-      - what: domain name to audit
-      - mandatory: yes
+     - type: string
+     - what: domain name to audit
+     - mandatory: yes
   2. `subdomain`:
-      - type: string
-      - what: specific subdomain to audit
-      - mandatory: no
+     - type: string
+     - what: specific subdomain to audit
+     - mandatory: no
 - Output: `The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and points to [DESTINATION]`
 - When only the parameter domain is provided, display information for its subdomains `www`, `lb-01`, `web-01` and `web-02` - in this specific order
 - When passing `domain` and `subdomain` parameters, display information for the specified subdomain
@@ -115,3 +115,21 @@ sylvain@ubuntu$ curl https://www.holberton.online
 Holberton School for the win!
 sylvain@ubuntu$
 ```
+
+---
+
+### Environment
+
+- Language: Bash Scripts
+  - OS: Ubuntu 20.04 LTS
+  - Executable: `chmod +x [filename]`; run with `./[filename]`
+  - Style guidelines:
+    - [Shellcheck](https://github.com/koalaman/shellcheck)
+
+---
+
+## Author
+
+- **<em>Website</em>** - [Ayomide Kayode](https://github.com/AyomideKayode)
+- **<em>ALX Software Engineering Program</em>** - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- **<em>Twitter</em>** - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
