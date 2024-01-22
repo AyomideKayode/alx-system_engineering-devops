@@ -57,3 +57,21 @@ root@ab6f4542747e:~# nc -z 0 8080 ; echo $?
 0
 root@ab6f4542747e:~#
 ```
+
+---
+
+### Environment
+
+- Language: Bash Scripts
+  - OS: Ubuntu 20.04 LTS
+  - Executable: `chmod +x [filename]`; run with `./[filename]`
+  - Style guidelines:
+    - [Shellcheck](https://github.com/koalaman/shellcheck)
+
+---
+
+## Author
+
+- **<em>Website</em>** - [Ayomide Kayode](https://github.com/AyomideKayode)
+- **<em>ALX Software Engineering Program</em>** - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- **<em>Twitter</em>** - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
