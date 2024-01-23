@@ -58,7 +58,28 @@ Enter password: (password for the newly created user, not your mysql password)
 ubuntu@229-web-01:~$
 ```
 
-| 2. If only you could see what I've seen with your eyes | [SOON](./)                                                                                                                         |
+2. [If only you could see what I've seen with your eyes](./2-database_to_replicate_from) :
+
+In order for you to set up replication, you’ll need to have a database with at least one table and one row in your primary MySQL server (web-01) to replicate from.
+
+- Create a database named `tyrell_corp`.
+- Within the `tyrell_corp` database create a table named `nexus6` and add at least one entry to it.
+- Make sure that `holberton_user` has `SELECT` permissions on your table so that we can check that the table exists and is not empty.
+
+Example:
+
+```sh
+mysql> SELECT * FROM nexus6;
++----+---------+
+| id | name    |
++----+---------+
+|  1 | Ayomide |
++----+---------+
+1 row in set (0.00 sec)
+
+mysql>
+```
+
 | 3. Quite an experience to live in fear, isn't it?      | [SOON](./)                                                                                                                         |
 | 4. Setup a Primary-Replica infrastructure using MySQL  | [4-mysql_configuration_primary](./4-mysql_configuration_primary), [4-mysql_configuration_replica](./4-mysql_configuration_replica) |
 | 5. MySQL backup                                        | [5-mysql_backup](./5-mysql_backup)                                                                                                 |
