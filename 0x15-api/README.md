@@ -88,6 +88,18 @@ TtemporeSmolestiasSdoloresSrerumSsequiSvoluptatesSipsumSconsequatur
 ayomide@Kazzywiz:~/alx-system_engineering-devops/0x15-api$
 ```
 
+1. [Export to CSV](./1-export_to_CSV.py) :
+
+Using what you did in the task #0, extend your Python script to export data in the CSV format.
+
+Requirements:
+
+- Records all tasks that are owned by this employee
+- Format must be: "USER_ID","USERNAME","TASK_COMPLETED_STATUS","TASK_TITLE"
+- File name must be: USER_ID.csv
+
+Example:
+
 | Task                                  | File                                                                                 |
 | ------------------------------------- | ------------------------------------------------------------------------------------ |
 | 0. Gather data from an API            | [0-gather_data_from_an_API.py](./0-gather_data_from_an_API.py)                       |
