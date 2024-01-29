@@ -38,7 +38,7 @@ def get_employee_todo_progress(employee_id):
 
     # Calculate progress
     total_tasks = len(todos_data)
-    completed_tasks = sum(task["completed"] for task in todos_data)
+    completed_tasks = sum(task.get("completed", False) for task in todos_data)
 
     # Display progress information
     print("Employee {} is done with tasks ({}/{}):".format(
