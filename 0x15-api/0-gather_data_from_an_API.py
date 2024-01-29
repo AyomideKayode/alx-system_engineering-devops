@@ -30,7 +30,7 @@ def get_employee_todo_progress(employee_id):
     # Fetch user information
     user_response = requests.get(user_url)
     user_data = user_response.json()
-    employee_name = user_data["name"]
+    employee_name = user_data.get('name')
 
     # Fetch TODO list for the employee
     todos_response = requests.get(todos_url)
@@ -48,7 +48,7 @@ def get_employee_todo_progress(employee_id):
 
     # Display titles of completed tasks
     for task in todos_data:
-        if task["completed"]:
+        if task.get('completed', False):
             print("\t {}".format(task.get("title")))
 
 
