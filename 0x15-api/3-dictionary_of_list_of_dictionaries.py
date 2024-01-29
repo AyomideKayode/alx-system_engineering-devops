@@ -5,7 +5,8 @@ and exports their TODO lists to a single JSON file.
 
 Requirements:
 - Records all tasks for each employee
-- Format must be: { "USER_ID": [{"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, ...], ... }
+- Format must be: { "USER_ID": [{"username": "USERNAME", "task": "TASK_TITLE",
+"completed": TASK_COMPLETED_STATUS}, ...], ... }
 - File name must be: todo_all_employees.json
 """
 
@@ -16,7 +17,8 @@ import sys
 
 def get_all_employees_and_tasks():
     """
-    Fetches information about all employees and their tasks from JSONPlaceholder API
+    Fetches information about all employees and their tasks from
+    JSONPlaceholder API
     and exports TODO lists to a single JSON file.
 
     Args:
