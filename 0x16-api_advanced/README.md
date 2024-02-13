@@ -35,42 +35,65 @@ Hint: No authentication is necessary for most features of the Reddit API. If you
 
 Requirements:
 
-- Prototype: def number_of_subscribers(subreddit)
+- Prototype: `def number_of_subscribers(subreddit)`
 - If not a valid subreddit, return 0.
 - NOTE: Invalid subreddits may return a redirect to search results. Ensure that you are not following redirects.
 
-First code submission for Task 0
-
-```py
-def number_of_subscribers(subreddit):
-    """Returns the number of subscribers for a given subreddit.
-    Args:     - subreddit (str): The name of the subreddit.
-    Returns:  - int: Number of subscribers, or 0 if the subreddit is invalid.
-    """
-
-    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
-
-    try:
-        # Send GET request to Reddit API
-        # Ensure a custom User-Agent to prevent errors.
-        response = requests.get(url, headers={'User-Agent': 'My User Agent'},
-                                allow_redirects=False)
-        data = response.json()  # Parse response as JSON
-
-        # Check if 'data' key exists and 'subscribers' key exists within it
-        if 'data' in data and 'subscribers' in data['data']:
-            # Return the number of subscribers
-            return data['data']['subscribers']
-        else:
-            # Return 0 if 'data' or 'subscribers' key doesn't exist
-            return 0
-    except Exception:
-        # Return 0 if there's any exception during the request
-        return 0
+```sh
+ayomide@Kazzywiz:~/alx-system_engineering-devops/0x16-api_advanced$ python3 0-main.py programming
+5909053
+ayomide@Kazzywiz:~/alx-system_engineering-devops/0x16-api_advanced$ python3 0-main.py this_is_a_fake_subreddit
+0
+ayomide@Kazzywiz:~/alx-system_engineering-devops/0x16-api_advanced$ 
 ```
 
-| Task           | File                           |
-| -------------- | ------------------------------ |
-|                |
-| 1. Top Ten     | [1-top_ten.py](./1-top_ten.py) |
-| 2. Recurse it! | [2-recurse.py](./2-recurse.py) |
+1. [Top Ten](./1-top_ten.py) :
+
+Write a function that queries the [Reddit API](https://www.reddit.com/dev/api/) and prints the titles of the first 10 hot posts listed for a given subreddit.
+
+Requirements:
+
+- Prototype: `def top_ten(subreddit)`
+- If not a valid subreddit, print None.
+- NOTE: Invalid subreddits may return a redirect to search results. Ensure that you are not following redirects.
+
+First submission:
+
+```py
+url = f"https://www.reddit.com/r/{subreddit}/hot.json"
+    # Ensure a custom User-Agent to prevent errors.
+    headers = {'User-Agent': 'My User Agent'}
+    params = {'limit': 10}
+
+    try:
+        response = requests.get(url, headers=headers, params=params,
+                                allow_redirects=False)
+        data = response.json()
+
+        posts = data['data']['children']
+        if len(posts) == 0:
+            print(None)
+        else:
+            for post in posts:
+                print(post['data']['title'])
+    except requests.RequestException:
+        print(None)
+```
+
+```sh
+ayomide@Kazzywiz:~/alx-system_engineering-devops/0x16-api_advanced$ python3 1-main.py programming
+[META] The future of r/programming
+It's not microservice or monolith; it's cognitive load you need to understand first
+The (short) story of how the SSH port became 22
+New record for fastest FizzBuzz implementation (283 GB/s)
+The High-Risk Refactoring
+Adding AddressSanitizer support to the Cheerp WebAssembly compiler
+Coq theorem prover will be renamed into Rocq
+Database Fundamentals
+Beyond RBAC: When standard models just aren’t enough | Permit
+(Almost) Every infrastructure decision I endorse or regret after 4 years running infrastructure at a startup
+Git Tips and Tricks
+ayomide@Kazzywiz:~/alx-system_engineering-devops/0x16-api_advanced$ 
+```
+
+2. [Recurse it!](./2-recurse.py) :
