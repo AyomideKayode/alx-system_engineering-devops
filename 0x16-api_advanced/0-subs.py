@@ -1,13 +1,14 @@
 #!usr/bin/python3
-"""Query Reddit API for number of subscribers for a given subreddit.
+
+"""
+Query Reddit API for number of subscribers for a given subreddit.
 """
 
 import requests
 
 
 def number_of_subscribers(subreddit):
-    """
-    Returns the number of subscribers for a given subreddit.
+    """Returns the number of subscribers for a given subreddit.
 
     Args:
     - subreddit (str): The name of the subreddit.
@@ -15,7 +16,7 @@ def number_of_subscribers(subreddit):
     - int: Number of subscribers, or 0 if the subreddit is invalid.
     """
 
-    url = f"https://www.reddit.com/r/{subreddit}/about.json"
+    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     # Ensure a custom User-Agent to prevent errors.
     headers = {'User-Agent': 'My User Agent'}
 
@@ -32,6 +33,6 @@ def number_of_subscribers(subreddit):
         else:
             # Return 0 if 'data' or 'subscribers' key doesn't exist
             return 0
-    except requests.RequestException:
+    except Exception:
         # Return 0 if there's any exception during the request
         return 0
