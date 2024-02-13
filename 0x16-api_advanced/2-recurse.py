@@ -12,12 +12,16 @@ def recurse(subreddit, hot_list=[], count=0, after=""):
 
     Args:
     - subreddit (str): The name of the subreddit.
-    - hot_list (list): List to store the titles of hot posts (used for recursion).
-    - count (int): The number of posts fetched in the current request (used for pagination).
-    - after (str): Identifier for the next page of results (used for pagination).
+    - hot_list (list): List to store the titles of hot posts
+      (used for recursion).
+    - count (int): The number of posts fetched in the current request
+      (used for pagination).
+    - after (str): Identifier for the next page of results
+      (used for pagination).
 
     Returns:
-    - list or None: A list containing titles of hot posts or None if no results are found.
+    - list or None: A list containing titles of hot posts or None if no
+      results are found.
     """
 
     endpoint = f"https://www.reddit.com/r/{subreddit}/hot.json"
