@@ -111,3 +111,9 @@ Prototype: def recurse(subreddit, hot_list=[])
 - NOTE: Invalid subreddits may return a redirect to search results. Ensure that you are not following redirects.
 
 Your code will NOT pass if you are using a loop and not recursively calling the function! This /can/ be done with a loop but the point is to use a recursive function. :)
+
+```sh
+ayomide@Kazzywiz:~/alx-system_engineering-devops/0x16-api_advanced$ python3 2-main.py programming
+925
+ayomide@Kazzywiz:~/alx-system_engineering-devops/0x16-api_advanced$
+```
