@@ -39,6 +39,36 @@ Requirements:
 - If not a valid subreddit, return 0.
 - NOTE: Invalid subreddits may return a redirect to search results. Ensure that you are not following redirects.
 
+First code submission for Task 0
+
+```py
+def number_of_subscribers(subreddit):
+    """Returns the number of subscribers for a given subreddit.
+    Args:     - subreddit (str): The name of the subreddit.
+    Returns:  - int: Number of subscribers, or 0 if the subreddit is invalid.
+    """
+
+    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
+
+    try:
+        # Send GET request to Reddit API
+        # Ensure a custom User-Agent to prevent errors.
+        response = requests.get(url, headers={'User-Agent': 'My User Agent'},
+                                allow_redirects=False)
+        data = response.json()  # Parse response as JSON
+
+        # Check if 'data' key exists and 'subscribers' key exists within it
+        if 'data' in data and 'subscribers' in data['data']:
+            # Return the number of subscribers
+            return data['data']['subscribers']
+        else:
+            # Return 0 if 'data' or 'subscribers' key doesn't exist
+            return 0
+    except Exception:
+        # Return 0 if there's any exception during the request
+        return 0
+```
+
 | Task           | File                           |
 | -------------- | ------------------------------ |
 |                |
