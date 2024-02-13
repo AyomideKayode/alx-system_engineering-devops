@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+"""Query Reddit API, parses the title of all hot articles.
+"""
+
 import requests
 
 
@@ -23,13 +26,15 @@ def count_words(subreddit, word_list, after=None, count_dict=None):
         count_dict = {}
 
     url = f"https://www.reddit.com/r/{subreddit}/hot.json"
-    # Ensure a custom User-Agent to prevent errors.
+    # Custom User-Agent to prevent errors.
     headers = {'User-Agent': 'custom-user-agent'}
 
     params = {'limit': 100, 'after': after} if after else {'limit': 100}
 
     try:
+        # Send GET request to Reddit API
         response = requests.get(url, headers=headers, params=params)
+        # Parse response as JSON
         data = response.json()
 
         if 'data' in data and 'children' in data['data']:
@@ -38,13 +43,16 @@ def count_words(subreddit, word_list, after=None, count_dict=None):
             for post in posts:
                 title = post['data']['title'].lower()
                 for word in word_list:
+                    # Check for occurrences of keyword in title
                     if f" {word} " in f" {title} ":
                         count_dict[word] = count_dict.get(word, 0) + 1
 
             if data['data']['after']:
+                # Recursively call count_words for next page of results
                 count_words(subreddit, word_list,
                             after=data['data']['after'], count_dict=count_dict)
             else:
+                # Print the sorted count of keywords
                 print_results(count_dict)
         else:
             print(None)
