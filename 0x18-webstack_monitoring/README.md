@@ -62,8 +62,38 @@ ubuntu@user-web-01:~$ curl -X GET "https://api.datadoghq.com/api/v1/hosts" -H "A
 ubuntu@user-web-01:~$
 ```
 
-| Task                    | File                                 |
-| ----------------------- | ------------------------------------ |
-|                         |
-| 1. Monitor some metrics | [SOON](./)                           |
-| 2. Create a dashboard   | [2-setup_datadog](./2-setup_datadog) |
+1. [Monitor some metrics](./README.md) :
+
+Among the litany of data your monitoring service can report to you are system metrics. You can use these metrics to determine statistics such as reads/writes per second, which can help your company determine if/how they should scale. Set up some monitors within the Datadog dashboard to monitor and alert you of a few. You can read about the various system metrics that you can monitor here: [System Check](https://docs.datadoghq.com/integrations/system/).
+
+- Set up a monitor that checks the number of read requests issued to the device per second.
+- Set up a monitor that checks the number of write requests issued to the device per second.
+
+2. [Create a dashboard](./2-setup_datadog) :
+
+Now create a dashboard with different metrics displayed in order to get a few different visualizations.
+
+- Create a new `dashboard`
+- Add at least 4 `widgets` to your dashboard. They can be of any type and monitor whatever you’d like
+- Create the answer file `2-setup_datadog` which has the `dashboard_id` on the first line. Note: in order to get the id of your dashboard, you may need to use [Datadog’s API](https://docs.datadoghq.com/api/?lang=python#get-all-dashboards)
+
+- Go to the Datadog dashboard.
+- Navigate to the 'Dashboards' section.
+- Click on 'New Dashboard.'
+- Add at least 4 widgets with different metrics. For example:
+  - Widget 1: Metric Time Series for CPU Usage 
+  - Widget 2: Top List for Most Active Processes
+  - Widget 3: Heatmap for Disk I/O Operations
+  - Widget 4: Line Graph for Network Traffic
+
+- Save the dashboard.
+
+Then you can get your id and dashboards from the command line like:
+
+```sh
+ubuntu@user-web-01:~$ curl -X GET "https://api.datadoghq.com/api/v1/dashboard" -H "Accept: application/json" -H "DD-API-KEY: <YOUR_API_KEY>" -H "DD-APPLICATION-KEY: <YOUR_APPLICATION_KEY>"
+{"dashboards":[{"id":"guq-qgy-ktj","title":"Ayomide's Dashboard Wed, Feb 14. 11:46pm","description":null,"layout_type":"ordered","url":"/dashboard/guq-qgy-ktj/ayomides-dashboard-wed-feb-14-1146pm","is_read_only":false,"created_at":"2024-02-14T22:47:20.653515+00:00","modified_at":"2024-02-14T22:50:24.573828+00:00","author_handle":"ayomidekay7@gmail.com","deleted_at":null}]}
+ubuntu@user-web-01:~$
+```
+
+Cheers🥂
