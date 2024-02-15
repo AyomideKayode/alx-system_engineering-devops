@@ -59,3 +59,7 @@ Requirements:
 While postmortem format can vary, stick to this one so that you can get properly reviewed by your peers.
 
 Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.
+
+- [Google Doc](https://docs.google.com/document/d/1D5RxQ3Xos2qgVEbPYN04Sgp1iIXpfH769XKLStkOugY/edit)
+
+- [Medium Blog](https://medium.com/@kazzywiz7/web-stack-outage-post-mortem-a-dramatic-tale-of-authentication-woes-280345b1fba1)
