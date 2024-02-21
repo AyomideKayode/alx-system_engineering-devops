@@ -78,3 +78,20 @@ root@e514b399d69d:~# curl -s 127.0.0.1:80 | grep Holberton
         <p>Yet another bug by a Holberton student</p>
 root@e514b399d69d:~#
 ```
+
+---
+
+### Environment
+
+- Language: Puppet config script
+- OS: Ubuntu 20.04 LTS
+- Web Server: Nginx on Docker container
+- Style guidelines: Puppet-lint
+
+---
+
+## Author
+
+- _Website_ - [Ayomide Kayode](https://github.com/AyomideKayode)
+- _ALX Software Engineering Program_ - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- _Twitter_ - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)

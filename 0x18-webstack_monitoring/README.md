@@ -97,3 +97,20 @@ ubuntu@user-web-01:~$
 ```
 
 Cheers🥂
+
+---
+
+### Environment
+
+- Language: Monitoring Software - Datadog Agent
+- OS: Ubuntu 20.04 LTS
+- Web Server: Dunno
+- Style guidelines: Knowledge
+
+---
+
+## Author
+
+- _Website_ - [Ayomide Kayode](https://github.com/AyomideKayode)
+- _ALX Software Engineering Program_ - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- _Twitter_ - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)

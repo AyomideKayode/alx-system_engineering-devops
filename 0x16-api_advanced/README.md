@@ -136,3 +136,21 @@ Requirements:
 Your code will NOT pass if you are using a loop and not recursively calling the function! This /can/ be done with a loop but the point is to use a recursive function. :)
 
 Disclaimer: number presented in this example cannot be accurate now - Reddit is hot articles are always changing.
+
+---
+
+### Environment
+
+- Language: Python 3.4.3
+  - OS: Ubuntu 20.04 LTS
+  - Compiler: Python3
+  - Style guidelines:
+    - [PEP 8 (version 1.7)](https://www.python.org/dev/peps/pep-0008/)
+
+---
+
+## Author
+
+- _Website_ - [Ayomide Kayode](https://github.com/AyomideKayode)
+- _ALX Software Engineering Program_ - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- _Twitter_ - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)

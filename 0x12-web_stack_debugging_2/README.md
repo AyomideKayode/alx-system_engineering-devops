@@ -1,12 +1,12 @@
 # Project: 0x12. Web stack debugging #2
 
-<img src="./99littlebugsinthecode-holberton.jpg" alt="99_little_bugs" width=60%>
+![99_little_bugs](./99littlebugsinthecode-holberton.jpg)
 
 ## Tasks
 
 0. [Run software as another user](./0-iamsomeoneelse) :
 
-<img src="./with_great_power_comes_great_responsibility.png" alt="uncle_ben_quote" width=75%>
+![uncle_ben_quote](./with_great_power_comes_great_responsibility.png)
 
 The user `root` is, on Linux, the “superuser”. It can do anything it wants, that’s a good and bad thing. A good practice is that one should never be logged in the `root` user, as if you fat finger a command and for example run `rm -rf /`, there is no comeback. That’s why it is preferable to run as a privileged user, meaning that the user also has the ability to perform tasks that the `root` user can do, just need to use a specific command that you need to discover.
 
@@ -86,6 +86,6 @@ Requirements:
 
 ## Author
 
-- **<em>Website</em>** - [Ayomide Kayode](https://github.com/AyomideKayode)
-- **<em>ALX Software Engineering Program</em>** - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
-- **<em>Twitter</em>** - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
+- _Website_ - [Ayomide Kayode](https://github.com/AyomideKayode)
+- _ALX Software Engineering Program_ - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- _Twitter_ - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
